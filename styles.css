@@ -1,0 +1,280 @@
+body {
+    margin: 0%;
+    width: 100%;
+    background-color: rgb(230, 93, 109);
+    overflow-y: hidden;
+    transition: background-color 0.025s;
+}
+
+#main {
+    margin: 0 auto;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    align-items:center;
+    vertical-align: middle;
+}
+
+/* PLAYER 1 */
+
+#Player1Score {
+    height: 100%;
+    display: flex;
+    width: 5vw;
+    position: relative;
+    justify-content: center;
+    vertical-align: top;
+}
+
+
+/* PLAYER 2 */
+
+#Player2Score {
+    display: flex;
+    height: 100%;
+    width: 5vw;
+    position: relative;
+    justify-content: center;
+    vertical-align: top;
+}
+
+/* BOARD */
+
+.playerScore {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 4vw;
+    height: fit-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    font-size: 200%;
+    border-radius: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.ScoreSpan {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(230, 93, 109) 10%, rgba(0, 0, 0, 1) 450%);
+    box-shadow: 0px 10px 65px -7px black;
+    z-index: 10;
+}
+
+#Boardsettings {
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    vertical-align: middle;
+
+    width: 50vw;
+    height: 35vw;
+}
+
+#Gameboard {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 40vw;
+    height: 35vw;
+    border: 3px solid rgb(177, 176, 176);
+    border-radius: 1%;
+    box-shadow: 0px 25px 70px -40px;
+}
+
+#Gamesquares {
+    justify-content: center;
+    background-color:aliceblue;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-auto-rows: repeat(7, 12.285%);
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+    vertical-align: top;
+}
+
+
+/* COLOR SELECTOR */
+
+#colorSelector {
+    position: relative;
+    z-index: 3;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    display: grid;
+    column-gap: 1.5vw;
+    margin-top: 3%;
+    margin-left: 5vw;;
+    width: 40vw;
+    height: 6vw;
+    border: 1px solid rgb(177, 176, 176);
+    box-shadow: 0px 20px 65px -40px;
+}
+
+
+/* GAME SETTINGS */
+
+#SettingsMenu {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    background-color: rgba(194, 192, 192, 0.9);
+    z-index: 100;
+}
+
+#GameSettings {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.SettingsText {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.PlayerSettings {
+    display: flex;
+    width: 30%;
+    height: 80%;
+    text-align: center;
+    flex-flow: column;
+    margin-top: 2%;
+    background-color: rgba(231, 231, 231, 0.5);
+}
+
+.HumanButton {
+    margin-top: 20%;
+    width: 40%;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2%;
+    border: 0px;
+    border-radius: 5%;
+
+}
+
+.HumanButton:hover {
+    background-color: rgb(197, 235, 231);
+}
+
+.HumanButton:active {
+    background-color: rgb(152, 245, 235);
+}
+
+.AIButton {
+    border: 0px;
+    width: 40%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.AIButton:hover {
+    background-color: rgb(197, 235, 231);
+}
+
+.AIButton:active {
+    background-color: rgb(152, 245, 235);
+}
+
+.AISettings {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: auto;
+    height: 60%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.AIDepth {
+
+    align-self: center;
+    width: 30%;
+}
+
+
+#Player1Settings {
+    margin-left: 3%;
+}
+
+#Player2Settings {
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+#GameSettingsSpan {
+    position: relative;
+    display: flex;
+    width: 30%;
+    background-color: rgba(231, 231, 231, 0.5);
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#settingsText {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    border-radius: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* TOP BAR / SETTINGS */
+
+#file_container {
+    display: flex;
+    position: relative;
+    width: 89%;
+    margin-left: 1%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+#newBoard {
+    z-index: 100;
+    position: relative;
+    z-index: 0;
+    width: 20%;
+    border: 0px;
+    margin-left: auto;
+    transition: box-shadow 1s;
+    
+}
+
+#file_button {
+    z-index: 100;
+    position: relative;
+    margin-left: 1%;
+    width: 25%;
+}
+
+#optionsButton {
+    z-index: 100;
+}
+
+#canvas {
+    position: absolute;
+    display: flex;
+}

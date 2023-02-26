@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filler AI</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script defer src="./extractScreenshot.js"></script>
+    <script defer src="./AI.js"></script>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="file_container">
+            <button id="optionsButton">Options</button>
+            <input type="file" id="file_button" onchange="onUpload()"/>
+            <button id="newBoard">New Board</button>
+        </div>
+        <div id="Boardsettings">
+            <div id="Player1Score">
+                <span class="ScoreSpan">
+                    <label class="playerScore">0</label>
+                </span>
+            </div>
+            <div id="Gameboard">
+                <div id="Gamesquares">
+                    
+                </div>
+                <div id="SettingsMenu">
+                    <span id="GameSettingsSpan">
+                        <label id="settingsText">Game Settings</label>
+                    </span>
+                    <div id="GameSettings">
+                        <div id="Player1Settings" class="PlayerSettings">
+                            <label class="SettingsText">Player 1</label>
+                            <button class="HumanButton">Human</button>
+                            <button class="AIButton">AI</button>
+                            <div class="AISettings">
+                                <label class="DepthText">AI Depth</label>
+                                <input class="AIDepth">
+                            </div>
+                        </div>
+                        <div id="Player2Settings" class="PlayerSettings">
+                            <label class="SettingsText">Player 2</label>
+                            <button class="HumanButton">Human</button>
+                            <button class="AIButton">AI</button>
+                            <div class="AISettings">
+                                <label class="DepthText">AI Depth</label>
+                                <input class="AIDepth">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Player2Score">
+                <span class="ScoreSpan">
+                    <label class="playerScore">0</label>
+                </span>
+            </div>
+        </div>
+        <div id="colorSelector">
+
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+</body>
+</html>
